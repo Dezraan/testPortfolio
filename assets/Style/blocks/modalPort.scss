@@ -1,0 +1,177 @@
+.modal {
+    position: fixed; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: white; 
+    z-index: 1050;
+    opacity: 0; 
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; 
+    pointer-events: none; 
+    margin: 0;
+    padding: 0;
+    
+
+ 
+    &:target {
+        opacity: 1; 
+        pointer-events: auto; 
+        overflow-y: auto; 
+    &-dialog {
+        position: relative;
+        width: auto;
+        margin: 10px;
+    }  
+    &-content {
+        position: relative;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        background-color: #fff;
+        -webkit-background-clip: padding-box;
+        
+        background-clip: padding-box;
+        border: 1px solid rgba(0,0,0,.2);
+        border-radius: .3rem;
+        outline: 0;
+    }  
+    &-header {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 15px;
+        border-bottom: 1px solid #eceeef;
+    }
+    &-body {
+        position: relative;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        padding: 150px;
+        overflow: auto;
+        
+      }
+    }
+}
+.close {
+    padding: 10px 10px;
+    font-family: serif;
+    font-size: 15px;
+    position: fixed;
+    left: 93.5%;
+    top: -.7%;
+    z-index: 10;
+    
+}
+.gradient-button {
+    margin-left: 50%;
+    animation: animain  forwards;
+    transform: translateX(-50%);
+    @keyframes animain {
+        50% {
+         opacity: .5;
+         
+        }
+        
+        100% {
+            opacity: 1;
+        }
+ }
+}
+.header_content {
+    position: fixed;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 50px;
+    background: rgb(15, 15, 15);
+    margin: 0 auto;
+    z-index: 2;
+    h2 {
+        margin-top: -46px;
+        padding-left: 50%;
+        transform: translateX(-7.1%);
+        color: wheat;
+    }
+    &-item {
+        margin-top: 100px;
+        background-attachment: fixed;
+        
+        span {
+            font-size: 50px;
+            position: absolute;
+            color: white;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+.one {
+    position: relative;
+    background-image: url("../img/bg_uber.jpg");
+  
+}
+.two {
+    position: relative;
+    background-image: url("../img/main.jpg");
+    span {
+        font-size: 100px;
+        background-attachment: fixed;
+        width: 100px;
+    }
+    
+}
+.thre {
+    position: relative;
+    background-image: url("../img/IMG.png"), linear-gradient(-60deg, #FD749B 50%, #281AC8 80%);
+    z-index: 2;
+    background-size:auto;
+}
+.link {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background-color: tra;
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding-top: 10px;
+    top: 88.8%;
+    background-attachment: fixed;
+    transition: .2s;
+    &:hover {
+        width: 150px;
+        transition: .2s;
+    }
+    &_lin {
+        text-decoration: none;
+        font-size: 20px;
+        color: wheat;
+        &:hover {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}

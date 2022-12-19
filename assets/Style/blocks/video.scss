@@ -1,0 +1,42 @@
+.bg {
+  animation:slide 30s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg,#f2cc799c 10%, #f0b1abc0 45%, #b0a7cca9 15%); 
+  
+  bottom:0;
+  left:-50%;
+  opacity:.8;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+  padding: 0;
+  background-attachment: fixed;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:30s;
+  
+}
+
+.bg3 {
+  animation-duration:30s;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+
+
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+}
+

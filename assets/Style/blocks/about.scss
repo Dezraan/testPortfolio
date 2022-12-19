@@ -1,0 +1,36 @@
+.about {
+    width: 500px;
+    position: absolute;
+    height: 300px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: -23%;
+    background: white;
+    border-radius: 10px;
+    overflow: auto;
+    transition: 0.5s;
+
+
+    &__text {
+        display: block;
+        padding: 5px 25px;
+        font-size: 15px;
+        color: black;
+    }
+    &__close {
+        cursor: pointer;
+        width: 16px;
+        height: 15px;
+        transform: rotate(90deg);
+        background: rgb(61, 59, 59);
+        position: sticky;
+        border-bottom-left-radius: 10px;
+        display: block;
+        &:hover {
+            animation-play-state: paused;
+            background: rgb(78, 75, 75);
+        }
+    }
+}
+
+

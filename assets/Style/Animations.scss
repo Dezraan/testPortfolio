@@ -1,0 +1,52 @@
+.an_open {
+    display: block;
+    animation: an_open .9s ;
+    @keyframes an_open {
+        100% {
+            opacity: 1;
+        }
+        0% {
+            opacity: 0;
+        }
+    }
+}
+.an_close {
+    animation: an_close .9s ;
+    @keyframes an_close {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+}
+
+.act {
+    display: block;
+
+}
+.deact {
+    display: none;
+}
+.show {
+    opacity: 1;
+
+}
+
+.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.paralaxx {
+    height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: .9s;
+
+}
+
+
